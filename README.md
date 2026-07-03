@@ -1,66 +1,70 @@
-![Soundstorm Logo](soundstorm-logo.png)
+<div align="center">
 
-# Soundstorm: A Comprehensive Audio & AI Experience
+# 🌩️ SoundStorm
 
-## Overview
+**The all-in-one AI audio studio — generate, sculpt, compose, and chat your music into existence**
 
-Soundstorm is a cutting-edge AI-powered audio manipulation application designed to provide a rich yet simplified experience for sound designers, algorithmic composers, and experimental audio enthusiasts. From sample pack creation and algorithmic composition to AI text-to-audio and onscreen ChatGPT, Soundstorm is a sonic powerhouse.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![Replicate](https://img.shields.io/badge/Replicate-000000?style=flat)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-### Features
+</div>
 
-- 🎵 **AI Text-to-Audio Generation**: Generate any song or sound you want by a simple text prompt.
-- 📦 **Algorithmic Sample Pack Creation**: Automatically generate sample packs based on user-defined criteria.
-- 🎛 **Audio Effects**: Real-time audio effects like reverb, distortion, and more.
-- 🎶 **Algorithmic Composition**: Create algorithmic composition.
-- 🎹 **MIDI Randomizer**: Generate random MIDI sequences for creative inspiration.
-- 🗨️ **Chat with GPT**: Integrated chat using OpenAI's GPT models for real-time conversational experiences.
-- 🎲 **GPT Randomizer**: Generate random text snippets, prompts, or even song lyrics.
+---
 
-## Installation
+SoundStorm is a powerful Python audio studio that puts AI at the center of your music workflow. Generate audio from text, apply pro-grade effects, build sample packs, compose algorithmic beats, randomize MIDI, and chat with GPT-4 — all from one unified interface.
 
-### Prerequisites
+## ✨ Features
 
-- Python 3.11
+- **Text-to-Audio generation** — describe a sound and let AI create it via Replicate
+- **Sample pack creator** — batch-generate themed audio libraries
+- **Audio effects rack** — EQ, reverb, delay, compression via Pedalboard
+- **Algorithmic composition** — generate music procedurally
+- **MIDI randomizer** — create unpredictable MIDI patterns
+- **GPT-4 chat assistant** — ask questions, get music theory help, brainstorm sounds
+- **GPT randomizer** — let GPT drive the creative process
 
-### Install Dependencies
-
-Clone the repository and navigate into the project directory. Run the following command to install all the necessary packages:
-
-```bash
-pip install pedalboard pydub replicate midiutil soundfile openai numpy pygame
-```
-
-### API Keys
-
-You'll need to have API keys for both Replicate and OpenAI:
-
-- For Replicate, sign up at: https://replicate.com and follow the instructions to get your API key.
-- For OpenAI, sign up at: https://openai.com/product and follow the instructions to get your API key.
-
-Add these keys in the appropriate sections within the application before running it.
-
-### Running the Application
-
-After installing the prerequisites and obtaining the API keys, you can run the application using:
+## 🚀 Quick Start
 
 ```bash
-python Soundstorm.py
+git clone https://github.com/RhythrosaLabs/soundstorm.git
+cd soundstorm
+pip install -r requirements.txt
+python main.py
 ```
 
-### Important
+Add your OpenAI and Replicate API keys to a `.env` file:
 
-This is SUPER rough. Currently, it only exists as a Python script and has only been tested on 2 different Macs. It is more or less a working prototype with a super stripped-down GUI. It can be buggy and does require finagling. Also things definitely need to be cleaned up, labeled better, etc etc. I could use assistance with this!
+```
+OPENAI_API_KEY=your_key
+REPLICATE_API_TOKEN=your_token
+```
 
-## Contributing
+## 🛠️ Tech Stack
 
-Contributions are welcome! This is the work of an amateur. Would love to see it fleshed out!
+- **Python** — core language
+- **OpenAI / GPT-4** — chat and randomization
+- **Replicate** — AI audio generation
+- **Pedalboard** — audio effects (Spotify)
+- **pydub** — audio manipulation
+- **midiutil** — MIDI generation
+- **pygame** — audio playback
+- **soundfile** — file I/O
 
-## Support
+## 🤝 Contributing
 
-For support and feature requests, please open an issue on this repository.
+PRs welcome. Open an issue first for major changes.
 
-[![Support via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/noodlebake)
+## 📄 License
 
-## License
+MIT
 
-This project is licensed under the MIT License.
+## 💛 Support
+
+If SoundStorm sparks your creativity, consider supporting development:
+
+👉 [Donate via PayPal](https://paypal.me/noodlebake) — @noodlebake
+
+---
+<div align="center">Made with ❤️ by <a href="https://github.com/RhythrosaLabs">RhythrosaLabs</a></div>
